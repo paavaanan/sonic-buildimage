@@ -64,7 +64,7 @@
         <Multihop>1</Multihop>
         <HoldTime>10</HoldTime>
         <KeepAliveTime>3</KeepAliveTime>
-       <BGPSession>
+	</BGPSession>
       <BGPSession>
         <StartRouter>ARISTA04T1</StartRouter>
         <StartPeer>FC00::1A</StartPeer>
