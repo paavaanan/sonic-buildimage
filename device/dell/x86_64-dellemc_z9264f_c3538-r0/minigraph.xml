@@ -5,7 +5,7 @@
       <BGPSession>
         <StartRouter>ARISTA01T0</StartRouter>
         <StartPeer>10.0.0.33</StartPeer>
-        <EndRouter>sonic-z9264f-01</EndRouter>
+        <EndRouter>sonic</EndRouter>
         <EndPeer>10.0.0.32</EndPeer>
         <Multihop>1</Multihop>
         <HoldTime>10</HoldTime>
@@ -14,14 +14,14 @@
       <BGPSession>
         <StartRouter>ARISTA01T0</StartRouter>
         <StartPeer>FC00::42</StartPeer>
-        <EndRouter>sonic-z9264f-01</EndRouter>
+        <EndRouter>sonic</EndRouter>
         <EndPeer>FC00::41</EndPeer>
         <Multihop>1</Multihop>
         <HoldTime>10</HoldTime>
         <KeepAliveTime>3</KeepAliveTime>
       </BGPSession>
       <BGPSession>
-        <StartRouter>sonic-z9264f-01</StartRouter>
+        <StartRouter>sonic</StartRouter>
         <StartPeer>10.0.0.0</StartPeer>
         <EndRouter>ARISTA01T2</EndRouter>
         <EndPeer>10.0.0.1</EndPeer>
@@ -30,7 +30,7 @@
         <KeepAliveTime>3</KeepAliveTime>
       </BGPSession>
       <BGPSession>
-        <StartRouter>sonic-z9264f-01</StartRouter>
+        <StartRouter>sonic</StartRouter>
         <StartPeer>FC00::1</StartPeer>
         <EndRouter>ARISTA01T2</EndRouter>
         <EndPeer>FC00::2</EndPeer>
@@ -41,7 +41,7 @@
       <BGPSession>
         <StartRouter>ARISTA02T0</StartRouter>
         <StartPeer>10.0.0.35</StartPeer>
-        <EndRouter>sonic-z9264f-01</EndRouter>
+        <EndRouter>sonic</EndRouter>
         <EndPeer>10.0.0.34</EndPeer>
         <Multihop>1</Multihop>
         <HoldTime>10</HoldTime>
@@ -50,14 +50,14 @@
       <BGPSession>
         <StartRouter>ARISTA02T0</StartRouter>
         <StartPeer>FC00::46</StartPeer>
-        <EndRouter>sonic-z9264f-01</EndRouter>
+        <EndRouter>sonic</EndRouter>
         <EndPeer>FC00::45</EndPeer>
         <Multihop>1</Multihop>
         <HoldTime>10</HoldTime>
         <KeepAliveTime>3</KeepAliveTime>
       </BGPSession>
       <BGPSession>
-        <StartRouter>sonic-z9264f-01</StartRouter>
+        <StartRouter>sonic</StartRouter>
         <StartPeer>10.0.0.2</StartPeer>
         <EndRouter>ARISTA02T2</EndRouter>
         <EndPeer>10.0.0.3</EndPeer>
@@ -78,7 +78,7 @@
     <Routers xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Search.Autopilot.Evolution">
       <a:BGPRouterDeclaration>
         <a:ASN>65100</a:ASN>
-        <a:Hostname>sonic-z9264f-01</a:Hostname>
+        <a:Hostname>sonic</a:Hostname>
         <a:Peers>
           <BGPPeer>
             <Address>10.0.0.33</Address>
@@ -195,7 +195,7 @@
       <MplsInterfaces/>
       <MplsTeInterfaces/>
       <RsvpInterfaces/>
-      <Hostname>sonic-z9264f-01</Hostname>
+      <Hostname>sonic</Hostname>
       <PortChannelInterfaces/>
       <VlanInterfaces/>
       <IPInterfaces>
@@ -203,7 +203,7 @@
           <ElementType>IPInterface</ElementType>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/1</AttachTo>
-          <Prefix>10.0.0.1/24</Prefix>
+          <Prefix>10.0.0.1/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -213,7 +213,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/2</AttachTo>
-          <Prefix>10.0.0.3/24</Prefix>
+          <Prefix>10.0.0.3/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -223,7 +223,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/3</AttachTo>
-          <Prefix>10.0.0.5/24</Prefix>
+          <Prefix>10.0.0.5/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -233,7 +233,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/4</AttachTo>
-          <Prefix>10.0.0.7/24</Prefix>
+          <Prefix>10.0.0.7/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -243,7 +243,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/5</AttachTo>
-          <Prefix>10.0.0.9/24</Prefix>
+          <Prefix>10.0.0.9/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -253,7 +253,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/6</AttachTo>
-          <Prefix>10.0.0.11/24</Prefix>
+          <Prefix>10.0.0.11/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -263,7 +263,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/7</AttachTo>
-          <Prefix>10.0.0.13/24</Prefix>
+          <Prefix>10.0.0.13/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -273,7 +273,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/8</AttachTo>
-          <Prefix>10.0.0.15/24</Prefix>
+          <Prefix>10.0.0.15/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -283,7 +283,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/9</AttachTo>
-          <Prefix>10.0.0.17/24</Prefix>
+          <Prefix>10.0.0.17/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -293,7 +293,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/10</AttachTo>
-          <Prefix>10.0.0.19/24</Prefix>
+          <Prefix>10.0.0.19/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -303,7 +303,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/11</AttachTo>
-          <Prefix>10.0.0.21/24</Prefix>
+          <Prefix>10.0.0.21/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -313,7 +313,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/12</AttachTo>
-          <Prefix>10.0.0.23/24</Prefix>
+          <Prefix>10.0.0.23/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -323,7 +323,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/13</AttachTo>
-          <Prefix>10.0.0.25/24</Prefix>
+          <Prefix>10.0.0.25/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -333,7 +333,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/14</AttachTo>
-          <Prefix>10.0.0.27/24</Prefix>
+          <Prefix>10.0.0.27/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -343,7 +343,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/15</AttachTo>
-          <Prefix>10.0.0.29/24</Prefix>
+          <Prefix>10.0.0.29/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -353,7 +353,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/16</AttachTo>
-          <Prefix>10.0.0.31/24</Prefix>
+          <Prefix>10.0.0.31/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -363,7 +363,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/17</AttachTo>
-          <Prefix>10.0.0.33/24</Prefix>
+          <Prefix>10.0.0.33/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -373,7 +373,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/18</AttachTo>
-          <Prefix>10.0.0.35/24</Prefix>
+          <Prefix>10.0.0.35/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -383,7 +383,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/19</AttachTo>
-          <Prefix>10.0.0.37/24</Prefix>
+          <Prefix>10.0.0.37/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -393,7 +393,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/20</AttachTo>
-          <Prefix>10.0.0.39/24</Prefix>
+          <Prefix>10.0.0.39/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -403,7 +403,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/21</AttachTo>
-          <Prefix>10.0.0.41/24</Prefix>
+          <Prefix>10.0.0.41/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -413,7 +413,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/22</AttachTo>
-          <Prefix>10.0.0.43/24</Prefix>
+          <Prefix>10.0.0.43/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -423,7 +423,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/23</AttachTo>
-          <Prefix>10.0.0.45/24</Prefix>
+          <Prefix>10.0.0.45/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -433,7 +433,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/24</AttachTo>
-          <Prefix>10.0.0.47/24</Prefix>
+          <Prefix>10.0.0.47/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -443,7 +443,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/25</AttachTo>
-          <Prefix>10.0.0.49/24</Prefix>
+          <Prefix>10.0.0.49/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -453,7 +453,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/26</AttachTo>
-          <Prefix>10.0.0.51/24</Prefix>
+          <Prefix>10.0.0.51/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -463,7 +463,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/27</AttachTo>
-          <Prefix>10.0.0.53/24</Prefix>
+          <Prefix>10.0.0.53/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -473,7 +473,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/28</AttachTo>
-          <Prefix>10.0.0.55/24</Prefix>
+          <Prefix>10.0.0.55/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -483,7 +483,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/29</AttachTo>
-          <Prefix>10.0.0.57/24</Prefix>
+          <Prefix>10.0.0.57/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -493,7 +493,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/30</AttachTo>
-          <Prefix>10.0.0.59/24</Prefix>
+          <Prefix>10.0.0.59/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -504,7 +504,7 @@
           <ElementType>IPInterface</ElementType>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/31</AttachTo>
-          <Prefix>10.0.0.61/24</Prefix>
+          <Prefix>10.0.0.61/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -515,7 +515,7 @@
           <ElementType>IPInterface</ElementType>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/32</AttachTo>
-          <Prefix>10.0.0.63/24</Prefix>
+          <Prefix>10.0.0.63/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -526,7 +526,7 @@
           <ElementType>IPInterface</ElementType>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/33</AttachTo>
-          <Prefix>10.0.0.65/24</Prefix>
+          <Prefix>10.0.0.65/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -536,7 +536,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/34</AttachTo>
-          <Prefix>10.0.0.67/24</Prefix>
+          <Prefix>10.0.0.67/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -547,7 +547,7 @@
           <ElementType>IPInterface</ElementType>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/35</AttachTo>
-          <Prefix>10.0.0.69/24</Prefix>
+          <Prefix>10.0.0.69/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -558,7 +558,7 @@
           <ElementType>IPInterface</ElementType>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/36</AttachTo>
-          <Prefix>10.0.0.71/24</Prefix>
+          <Prefix>10.0.0.71/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -569,7 +569,7 @@
           <ElementType>IPInterface</ElementType>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/37</AttachTo>
-          <Prefix>10.0.0.73/24</Prefix>
+          <Prefix>10.0.0.73/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -579,7 +579,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/38</AttachTo>
-          <Prefix>10.0.0.75/24</Prefix>
+          <Prefix>10.0.0.75/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -589,7 +589,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/39</AttachTo>
-          <Prefix>10.0.0.77/24</Prefix>
+          <Prefix>10.0.0.77/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -599,7 +599,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/40</AttachTo>
-          <Prefix>10.0.0.79/24</Prefix>
+          <Prefix>10.0.0.79/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -609,7 +609,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/41</AttachTo>
-          <Prefix>10.0.0.81/24</Prefix>
+          <Prefix>10.0.0.81/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -619,7 +619,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/42</AttachTo>
-          <Prefix>10.0.0.83/24</Prefix>
+          <Prefix>10.0.0.83/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -629,7 +629,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/43</AttachTo>
-          <Prefix>10.0.0.85/24</Prefix>
+          <Prefix>10.0.0.85/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -639,7 +639,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/44</AttachTo>
-          <Prefix>10.0.0.87/24</Prefix>
+          <Prefix>10.0.0.87/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -649,7 +649,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/45</AttachTo>
-          <Prefix>10.0.0.89/24</Prefix>
+          <Prefix>10.0.0.89/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -659,7 +659,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/46</AttachTo>
-          <Prefix>10.0.0.91/24</Prefix>
+          <Prefix>10.0.0.91/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -669,7 +669,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/47</AttachTo>
-          <Prefix>10.0.0.93/24</Prefix>
+          <Prefix>10.0.0.93/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -679,7 +679,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/48</AttachTo>
-          <Prefix>10.0.0.95/24</Prefix>
+          <Prefix>10.0.0.95/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -689,7 +689,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/49</AttachTo>
-          <Prefix>10.0.0.97/24</Prefix>
+          <Prefix>10.0.0.97/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -699,7 +699,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/50</AttachTo>
-          <Prefix>10.0.0.99/24</Prefix>
+          <Prefix>10.0.0.99/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -709,7 +709,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/51</AttachTo>
-          <Prefix>10.0.0.101/24</Prefix>
+          <Prefix>10.0.0.101/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -719,7 +719,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/52</AttachTo>
-          <Prefix>10.0.0.103/24</Prefix>
+          <Prefix>10.0.0.103/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -729,7 +729,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/53</AttachTo>
-          <Prefix>10.0.0.105/24</Prefix>
+          <Prefix>10.0.0.105/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -739,7 +739,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/54</AttachTo>
-          <Prefix>10.0.0.107/24</Prefix>
+          <Prefix>10.0.0.107/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -749,7 +749,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/55</AttachTo>
-          <Prefix>10.0.0.109/24</Prefix>
+          <Prefix>10.0.0.109/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -759,7 +759,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/56</AttachTo>
-          <Prefix>10.0.0.111/24</Prefix>
+          <Prefix>10.0.0.111/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -769,7 +769,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/57</AttachTo>
-          <Prefix>10.0.0.113/24</Prefix>
+          <Prefix>10.0.0.113/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -779,7 +779,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/58</AttachTo>
-          <Prefix>10.0.0.115/24</Prefix>
+          <Prefix>10.0.0.115/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -789,7 +789,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/59</AttachTo>
-          <Prefix>10.0.0.117/24</Prefix>
+          <Prefix>10.0.0.117/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -799,7 +799,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/60</AttachTo>
-          <Prefix>10.0.0.119/24</Prefix>
+          <Prefix>10.0.0.119/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -809,7 +809,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/61</AttachTo>
-          <Prefix>10.0.0.121/24</Prefix>
+          <Prefix>10.0.0.121/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -819,7 +819,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/62</AttachTo>
-          <Prefix>10.0.0.123/24</Prefix>
+          <Prefix>10.0.0.123/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -829,7 +829,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/63</AttachTo>
-          <Prefix>10.0.0.125/24</Prefix>
+          <Prefix>10.0.0.125/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -839,7 +839,7 @@
         <IPInterface>
           <Name i:Name="true"/>
           <AttachTo>hundredGigE1/64</AttachTo>
-          <Prefix>10.0.0.127/24</Prefix>
+          <Prefix>10.0.0.127/31</Prefix>
           </IPInterface>
           <IPInterface>
           <Name i:Name="true"/>
@@ -1536,6 +1536,6 @@
     </Devices>
     <Properties xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Search.Autopilot.Evolution"/>
   </MetadataDeclaration>
-  <Hostname>sonic-z9264f-01</Hostname>
-  <HwSku>Dellemc-Z9264f</HwSku>
+  <Hostname>sonic</Hostname>
+  <HwSku>DellEMC-Z9264f</HwSku>
 </DeviceMiniGraph>
