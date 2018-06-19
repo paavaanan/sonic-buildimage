@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 
 # Install required packages
-RUN apt-get install -y python-pip sensord fancontrol
+RUN apt-get install -y python-pip sensord fancontrol ipmitool
 
 {% if docker_platform_monitor_debs.strip() -%}
 # Copy all locally-built Debian package dependencies
