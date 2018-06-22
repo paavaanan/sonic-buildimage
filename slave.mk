@@ -63,6 +63,10 @@ ifeq ($(SONIC_ENABLE_PFCWD_ON_START),y)
 ENABLE_PFCWD_ON_START = y
 endif
 
+ifeq ($(SONIC_ENABLE_SYSTEM_TELEMETRY),y)
+ENABLE_SYSTEM_TELEMETRY = y
+endif
+
 include $(RULES_PATH)/config
 include $(RULES_PATH)/functions
 include $(RULES_PATH)/*.mk
@@ -418,13 +422,14 @@ $(DOCKER_LOAD_TARGETS) : $(TARGET_PATH)/%.gz-load : .platform docker-start $$(TA
 $(addprefix $(TARGET_PATH)/, $(SONIC_INSTALLERS)) : $(TARGET_PATH)/% : \
         .platform \
         onie-image.conf \
+        build_debian.sh \
+        build_image.sh \
         $$(addsuffix -install,$$(addprefix $(DEBS_PATH)/,$$($$*_DEPENDS))) \
         $$(addprefix $(DEBS_PATH)/,$$($$*_INSTALLS)) \
         $$(addprefix $(DEBS_PATH)/,$$($$*_LAZY_INSTALLS)) \
         $$(addprefix $(FILES_PATH)/,$$($$*_FILES)) \
         $(addprefix $(DEBS_PATH)/,$(INITRAMFS_TOOLS) \
                 $(LINUX_KERNEL) \
-                $(IGB_DRIVER) \
                 $(IXGBE_DRIVER) \
                 $(SONIC_DEVICE_DATA) \
                 $(SONIC_UTILS) \
@@ -546,6 +551,8 @@ clean : .platform clean-logs $$(SONIC_CLEAN_DEBS) $$(SONIC_CLEAN_FILES) $$(SONIC
 ###############################################################################
 
 all : .platform $$(addprefix $(TARGET_PATH)/,$$(SONIC_ALL))
+
+stretch : $$(addprefix $(DEBS_PATH)/,$$(SONIC_STRETCH_DEBS))
 
 ###############################################################################
 ## Standard targets
